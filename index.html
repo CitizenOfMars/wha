@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpathiCA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#"><span class="brand-mark">e</span> EmpathiCA</a>
+        <div class="study-tag">RESEARCH SESSION</div>
+
+        <p class="sidebar-label">YOUR GROUP</p>
+        <button class="room active"><span class="room-icon">#</span><span>Ethics case study</span><span class="count">4</span></button>
+
+        <p class="sidebar-label members-label">MEMBERS</p>
+        <div class="member"><span class="avatar purple">P1</span><span>G1P1</span><i></i></div>
+        <div class="member"><span class="avatar coral">P2</span><span>G1P2</span><i></i></div>
+        <div class="member"><span class="avatar teal">P3</span><span>G1P3</span><i></i></div>
+        <div class="member"><span class="avatar gold">P4</span><span>G1P4</span><i></i></div>
+
+        <div class="sidebar-bottom">
+          <button class="privacy-button">◌ &nbsp; Your coaching is private</button>
+          <div class="you"><span class="avatar you-avatar">P2</span><span><strong>G1P2</strong><small>In session</small></span><button class="more">•••</button></div>
+        </div>
+      </aside>
+
+      <section class="chat-panel">
+        <header class="chat-header">
+          <div><h1>Ethics case study</h1><p><span class="online-dot"></span> 4 participants active</p></div>
+          <div class="header-actions">
+            <button class="header-button" id="resetSession">Reset</button>
+            <button class="header-button" id="infoButton">i <span>Session info</span></button>
+          </div>
+        </header>
+
+        <div class="context-bar"><span>✦</span><p>You are discussing a decision-making scenario. Be respectful, specific, and collaborative.</p></div>
+
+        <div class="prompt-row" aria-label="Suggested prompts">
+          <button class="prompt-chip" data-prompt="I think we should report the issue now, but I also want to make sure we protect the people affected and keep the team informed.">Report now</button>
+          <button class="prompt-chip" data-prompt="Could we pause for a moment and agree on the safest next step before we decide how to move forward?">Pause and clarify</button>
+          <button class="prompt-chip" data-prompt="I agree with the concern. Maybe we can propose a workaround while the team prepares the fix and keeps stakeholders updated.">Add workaround</button>
+        </div>
+
+        <div class="messages" id="messages" aria-live="polite">
+          <div class="date-divider"><span>Today</span></div>
+          <article class="message"><span class="avatar purple">P1</span><div><div class="message-meta"><strong>G1P1</strong><time>10:18 AM</time></div><p>For the case study, should we recommend reporting the error right away, even if it delays the project?</p></div></article>
+          <article class="message"><span class="avatar teal">P3</span><div><div class="message-meta"><strong>G1P3</strong><time>10:19 AM</time></div><p>I think we should. The impact on the people using the system seems more important than the deadline.</p></div></article>
+          <article class="message"><span class="avatar gold">P4</span><div><div class="message-meta"><strong>G1P4</strong><time>10:20 AM</time></div><p>Agreed. Maybe we can also suggest a short-term workaround while the team fixes it?</p></div></article>
+        </div>
+
+        <section class="composer-wrap">
+          <div class="coach-card hidden" id="coachCard">
+            <div class="coach-icon">✦</div>
+            <div class="coach-copy"><div class="coach-heading">Private suggestion <span id="labelPill">Make clearer</span></div><p id="coachReason">A clearer request may help the group decide.</p><div class="suggestion-text" id="suggestionText"></div></div>
+            <div class="coach-actions"><button class="ghost-button" id="dismissButton">Keep mine</button><button class="use-button" id="useButton">Use suggestion</button></div>
+          </div>
+          <div class="composer">
+            <textarea id="draft" rows="2" placeholder="Write a message…" aria-label="Message draft"></textarea>
+            <div class="composer-footer"><span class="private-note">◌ Private coaching is on</span><button class="send-button" id="sendButton" disabled>Send <span>↑</span></button></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="infoDialog"><button class="close-dialog" id="closeDialog">×</button><span class="dialog-icon">✦</span><h2>Your writing coach stays private.</h2><p>EmpathiCA can suggest a clearer or more considerate version of your draft. Only you can see these suggestions, and you always choose what gets sent.</p><button class="dialog-button" id="gotIt">Got it</button></dialog>
+    <script src="app.js"></script>
+  </body>
+</html>

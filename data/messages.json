@@ -1,0 +1,71 @@
+[
+  {
+    "id": "m1",
+    "speaker": "G1P1",
+    "avatar": "purple",
+    "badge": "P1",
+    "text": "For the case study, should we recommend reporting the error right away, even if it delays the project?",
+    "time": "10:18 AM"
+  },
+  {
+    "id": "m2",
+    "speaker": "G1P3",
+    "avatar": "teal",
+    "badge": "P3",
+    "text": "I think we should. The impact on the people using the system seems more important than the deadline.",
+    "time": "10:19 AM"
+  },
+  {
+    "id": "m3",
+    "speaker": "G1P4",
+    "avatar": "gold",
+    "badge": "P4",
+    "text": "Agreed. Maybe we can also suggest a short-term workaround while the team fixes it?",
+    "time": "10:20 AM"
+  },
+  {
+    "id": "1790004575539-c037b302792a3",
+    "speaker": "G1P2",
+    "avatar": "coral",
+    "badge": "P2",
+    "text": "I think we should report the issue now, but we also need a workaround.",
+    "time": "11:29 PM",
+    "you": true
+  },
+  {
+    "id": "1790004836005-f68e346b1961f",
+    "speaker": "G1P2",
+    "avatar": "coral",
+    "badge": "P2",
+    "text": "in",
+    "time": "11:33 PM",
+    "you": true
+  },
+  {
+    "id": "1790004836403-d40349a7468c6",
+    "speaker": "G1P4",
+    "avatar": "gold",
+    "badge": "P4",
+    "text": "That sounds good. Let’s make sure we also account for the people affected.",
+    "time": "11:33 PM",
+    "you": false
+  },
+  {
+    "id": "1790004839380-bf145d34727c4",
+    "speaker": "G1P2",
+    "avatar": "coral",
+    "badge": "P2",
+    "text": "uiyuyfg",
+    "time": "11:33 PM",
+    "you": true
+  },
+  {
+    "id": "1790004839752-30c77890ae0d",
+    "speaker": "G1P4",
+    "avatar": "gold",
+    "badge": "P4",
+    "text": "That sounds good. Let’s make sure we also account for the people affected.",
+    "time": "11:33 PM",
+    "you": false
+  }
+]
